@@ -1,13 +1,62 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.btn {
+  @apply text-white bg-color-primary px-8 py-2 rounded-3xl hover:text-color-primary box-content hover:bg-white hover:border border-color-primary duration-200 transform ease-out;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.btn2 {
+  @apply text-white bg-color-primary px-12 py-4 rounded-3xl hover:text-color-primary box-content hover:bg-white hover:border border-color-primary duration-200 transform ease-out;
 }
+
+.containers{
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.50);
+  
+
+}
+.outer{
+  height: 100%;
+  width: 100%;
+  
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.inner{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.50);
+  
+}
+
+.banner-text{
+  
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+
+#bg-testimoniall{
+  background-image: url(./Pages/image/carousel-2.jpg);
+  background-size: cover;
+}
+
+#footer-bg{
+  background-image: url(./Pages/image/carousel-2.jpg);
+  background-size: cover;
+  
+
+}
+
